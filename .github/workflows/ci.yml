@@ -33,6 +33,9 @@ jobs:
       run: ./gradlew build
 
   publish:
+    
+    steps:
+      - uses: actions/checkout@v2
 
     needs: build
 
